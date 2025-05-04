@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Consumo de REST‑API de Usuarios</title>
+</head>
+<body>
+  <h1>Consumo de REST‑API de Usuarios</h1>
+
+  <!-- Formulario para crear/editar -->
+  <div>
+    <input type="hidden" id="userId">
+    <div><label>Name </label><input type="text" id="name"></div>
+    <div><label>Email </label><input type="text" id="email"></div>
+    <div><label>Age </label><input type="text" id="age"></div>
+    <div><label>Comments </label><input type="text" id="comments"></div>
+    <button onclick="postUser()"> POST user </button>
+    <button onclick="updateUser()"> PUT update user </button>
+    <button onclick="getUsers()"> GET usuarios </button>
+  </div>
+
+  <!-- Lugar donde mostramos tabla o resultados -->
+  <div id="resultado"></div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="callrestapi.js"></script>
+</body>
+</html>
